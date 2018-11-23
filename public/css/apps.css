@@ -1,0 +1,322 @@
+/* Heart Efect */
+
+*{
+  
+}
+.point {
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color:red;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+  }
+        @keyframes heartbit {
+          0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          opacity: 0.0;
+           }
+           25% {
+          -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+          opacity: 0.1;
+          }
+         50% {
+          -webkit-transform: scale(0.5);
+          opacity: 0.4;
+          }
+        75% {
+          -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+          opacity: 0.6;
+        }
+      100% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 0.0;
+      }
+       } 
+
+
+@keyframes succsess   {
+          0% {
+            color: green;
+   
+           }
+           25% {
+             color: orange;
+   
+          }
+         50% {
+          color: green;
+   
+          }
+        75% {
+          color: orange;
+   
+          
+        }
+      100% {
+        color: green;
+   
+      }
+       }    
+       @keyframes formError {
+          0% {
+            box-shadow: 0px 0px 0.7px 0.7px red;
+   border: 1px red;
+           }
+           25% {
+            box-shadow: 0px 0px 0.7px 0.7px orange;
+   border: 1px red;
+          }
+         50% {
+          box-shadow: 0px 0px 0.7px 0.7px red;
+   border: 1px red;
+          }
+        75% {
+          box-shadow: 0px 0px 0.7px 0.7px orange;
+   border: 1px red;
+          
+        }
+      100% {
+        box-shadow: 0px 0px 0.7px 0.7px red;
+   border: 1px red;
+      }
+       }    
+      
+
+   
+    .heartbit {
+    position: absolute;
+     right: -1.7px;
+    top: 2px;
+    height: 25px;
+    width: 25px;
+    z-index: 5;
+    border: 5px solid #ff7676;
+    border-radius: 70px;
+    -moz-animation: heartbit 1s ease-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: heartbit 1s ease-out;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation: heartbit 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+     animation: heartbit 1s ease-out;
+     animation-iteration-count: infinite;
+    }
+
+.content-header{
+
+  width: 100%;
+}
+.tab-pane{
+  min-height: 400px;
+}
+#mv{
+  
+  box-shadow: 0px 0px 1px 1px gray; 
+}
+
+ #example1_filter input{
+  max-height: 22px;
+  display: inline-block;
+  float: left;
+}
+ 
+.msbt{
+  color: #fff;
+  background-color: #3c8dbc;
+  border-width:0px;  
+  width: 30px;
+  height: 33.5px;
+}
+
+.msbt:hover{
+  border-color:; 
+}
+
+.pointable:hover tr:hover, .fastmenu:hover, .closeon:hover{
+  cursor: pointer;
+}
+
+.d_over{
+  background-color: green;
+}
+.d_end{
+  background-color: #FFF;
+}
+
+.btn{
+  border-radius: 0px;
+}
+
+.m_progressbar{
+  margin-top: 8px;
+}
+
+.m_progressbar .percent{
+  margin-left:45%;
+  margin-right: 59%; 
+  position: absolute;
+  font-weight: bold;
+  width: 100% ;
+}
+.m_progressbar .progress{
+
+  margin-top: 2.7px;
+  border-width: 1px ;
+  box-shadow: 0px 0px 0.7px 0.7px #3c8dbc; 
+  
+
+}
+.bxheader hr{
+  margin-left:2%;
+  margin-right: 2%; 
+}
+.bxtitle{
+  font-size: 0.7em;
+  color: orange;
+
+}
+
+.mbox{
+  box-shadow: 0px 0px 0.7px 0.7px gray;
+  margin: 2%;
+}
+
+.deText{
+  font-size: 90%;
+}
+
+
+.leftmd{
+ left: -15px;
+}
+.rightmd{
+  margin-right: -2px;
+}
+
+.mtoast{
+  position:fixed;
+  margin-bottom:2vh;
+  margin-right: 8px;
+
+
+}
+ .modal form, #addProp .box {
+  max-width: 600px; 
+  margin-left:auto; 
+  margin-right: auto;
+ }
+ #addProp .box {
+  max-width: 600px; 
+  margin-left:auto; 
+  margin-right: auto;
+  left: 8px;
+ }
+#addEq .modal-dialog,
+#deTalhes .modal-dialog {
+  margin-top: 30px;
+  max-width: 500px; 
+  margin-left:auto; 
+  margin-right: auto;
+ }
+.mradio{
+
+  padding: 5px;
+  
+   margin-top: 4px;
+  margin-left:.5px; 
+  margin-right:.5px;
+}
+
+#mTop{
+  display: none;
+  font-size: 4vh;
+  float: right;   
+  position: fixed;
+  bottom: 67px ;
+  right: 30px;
+  color: transparent;
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: #3c8dbc;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#mTop:hover{
+  color:#3c8dbc;
+}  
+/*
+::-webkit-scrollbar{
+   display: none;
+}
+*/
+.inputError{
+   -moz-animation: formError 4s ease-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: formError 4s ease-out;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation: formError 4s ease-out;
+    -webkit-animation-iteration-count: infinite;
+     animation: formError 4s ease-out;
+     animation-iteration-count: 1; 
+     box-shadow: 0px 0px 0.7px 0.7px #dd4b39;
+     border: 1px #dd4b39;
+}
+
+.inputSucsess{
+   
+     box-shadow: 0px 0px 0.7px 0.7px green;
+     border: 1px green;
+}
+
+.succsessAlert{
+     display: block;
+    -moz-animation: succsess 1s ease-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: succsess 1s ease-out;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation: succsess 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+     animation: succsess 1s ease-out;
+     animation-iteration-count: 6;    
+   
+}
+#help-block{
+  margin-top: 2px;
+  margin-left:1px; 
+  display: none;
+  color: #dd4b39;
+}
+
+.containerLocal{
+ 
+ margin-left: 15px;
+ margin-right: 15px;
+ margin-top: 8px; 
+
+}
+.iconlan{
+  width: 20px;
+  height: 20px;
+}
+.white_icon{
+  color:grey;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+}
+th{
+  text-align: center;
+  background-color:#5f737d;
+  color: white;
+}
+.sorting_asc{
+  color: white;
+}
